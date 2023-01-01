@@ -13,6 +13,21 @@ app.config['MYSQL_DB'] ='imagesimilaarity'
 mysql = MySQL(app)
 
 
+
+ALLOWED_EXT = set(['jpg' , 'jpeg' , 'png' , 'jfif'])
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1] in ALLOWED_EXT
+           
+           
+# @app.route('scraping',methods=['GET','POST'])
+# def scarping():
+
+      
+      
+    
+
+
 #index
 @app.route('/')
 def index():

@@ -71,7 +71,7 @@ body {
 
 
 .download {
-  background-color:#4CAF50;
+  background-color:#1683ff;
   border: none;
   color: white;
   padding: 6px 32px;
@@ -1614,4 +1614,221 @@ section {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 50px;
   font-size: 24px;
+}
+
+
+
+#mask_group {
+	top: 1500px;
+	left: 1500px;
+	width: 150px;
+	height: 150px;
+}
+
+
+#image_1 {
+	top: 200px;
+	left: 1600px;
+	width: 130px;
+	height: 130px;
+}
+
+
+#__p__repost {
+	top: 429px;
+	left: 1200px;
+	width: 40x;
+	height: 60px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: left;
+	color:#00B934;
+}
+
+
+#__p__asli {
+	top: 429px;
+	left: 1033px;
+	width: 80px;
+	height: 92px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 48px;
+	font-weight: bold;
+	text-align: left;
+	color:#00B934;
+}
+
+
+#__p___95_ {
+	top: 512px;
+	left: 900px;
+	width: 30px;
+	height: 54px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 20px;
+	text-align: left;
+	color:#000000;
+}
+
+#__p___80_ {
+	top: 577px;
+	left: 359px;
+	width: 30px;
+	height: 54px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 20px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#__p___98_ {
+	top: 642px;
+	left: 359px;
+	width: 30px;
+	height: 54px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 20px;
+	text-align: left;
+	color:#000000;
+}
+
+#__p___98_ {
+	top: 707px;
+	left: 359px;
+	width: 30px;
+	height: 54px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 20px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#__p___70_ {
+	top: 772px;
+	left: 359px;
+	width: 30px;
+	height: 54px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 20px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#__p___68_ {
+	top: 837px;
+	left: 359px;
+	width: 30px;
+	height: 54px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 20px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#__p__pekat_warna {
+	top: 512px;
+	left: 645px;
+	width: 30px;
+	height: 54px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 20px;
+	text-align: right;
+	color:#000000;
+}
+
+#__p__resolusi {
+	top: 577px;
+	left: 673px;
+	width: 30px;
+	height: 54px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 20px;
+	text-align: right;
+	color:#000000;
+}
+
+#__p__kesesuaian_bentuk {
+	top: 642px;
+	left: 604px;
+	width: 30px;
+	height: 54px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 20px;
+	text-align: left;
+	color:#000000;
+}
+
+#__p__posisi_objek {
+	top: 707px;
+	left: 648px;
+	width: 30px;
+	height: 54px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 20px;
+	text-align: left;
+	color:#000000;
+}
+
+#__p__resolusi {
+	top: 772px;
+	left: 673px;
+	width: 30px;
+	height: 54px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 20px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#__p__ukuran_file {
+	top: 837px;
+	left: 652px;
+	width: 30px;
+	height: 54px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 20px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#_bg__frame_1 {
+
+	left: 0px;
+	width: 1460px;
+	height: 380px;
+	background:rgba(255,255,255,1);
+}
+
+
+#hasil_repost {
+	top: 10px;
+	left: 673px;
+	width: 15px;
+	height: 20px;
+	overflow: hidden;
+	font-family: B612;
+	font-size: 15px;
+	text-align: center;
+	color:#000000;
 }
