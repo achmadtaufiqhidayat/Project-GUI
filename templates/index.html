@@ -40,6 +40,19 @@
 
 <body>
 
+
+  <p>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-success">
+    <strong>{{ message }}</strong>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+    </p>
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
@@ -163,19 +176,23 @@
               </div>
             </div>
             <div class="container4">
+
               <h3>Upload your File :</h3>
+              <form method="post" action="index"enctype="multipart/form-data">
               <div class="drag-area">
                 <div class="icon">
                   <i class="bx bx-layer"></i>
                 </div>
 
                 <span class="header">Drag & Drop</span>
-                <span class="header">or <span class="button">browse</span></span>
-                <input type="file" hidden />
+                <input type="file" name="images" multiple>
+                
                 <span class="support">Supports: JPEG, JPG, PNG</span>
               </div>
+            
               <div>
-                <button class="download">Process</button>
+              </form>
+                <button type="submit" name="submit"multiple="true" class="download">Process</button>
               </div>
             </div>
             <!-- <script type="text/javascript" href="{{ url_for('static',filename='js/main.js')}}"></script> -->
@@ -570,6 +587,26 @@
 
   <!-- Template Main JS File -->
   <script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+  <script>
+    $(document).ready(function(){
+    // File type validation
+    $("#fileInput").change(function(){
+    var fileLength = this.files.length;
+    var match= ["image/jpeg","image/png","image/jpg","image/gif"];
+    var i;
+    for(i = 0; i < fileLength; i++){ 
+    var file = this.files[i];
+    var imagefile = file.type;
+    if(!((imagefile==match[0]) || (imagefile==match[1]) || (imagefile==match[2]) || (imagefile==match[3]))){
+    alert('Please select a valid image file (JPEG/JPG/PNG/GIF).');
+    $("#fileInput").val('');
+    return false;
+    }
+    }
+    });
+    });
+    </script>
 
 </body>
 
