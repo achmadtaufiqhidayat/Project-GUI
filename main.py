@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 from flask_mysqldb import MySQL
 from werkzeug.security import check_password_hash, generate_password_hash
+from Shoppe_scraping.main import tokopedia
 
 
 app = Flask(__name__)
@@ -91,5 +92,13 @@ def logout():
     session.pop('level', None)
     return redirect(url_for('login'))
 
+# @app.route('/ambildata')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
+
+# @app.route('/scraping', methods=('GET', 'POST'))
+# def ambildata():
+    # username = request.form.get('username')
+    # tokopedia(username)
