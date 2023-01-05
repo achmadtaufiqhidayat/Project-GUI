@@ -363,8 +363,8 @@
       <div class="container">
 
         <div class="d-flex align-items-center justify-content-center vh-60 flex-column gap-7">
-          <form method="post" action="/scraping" class="d-flex">
-            <input class="form-control me-10" type="search" placeholder="Cari Nama Produk " aria-label="Search">
+          <form method="post" action="/predict" class="d-flex">
+            <input class="form-control me-10" type="search" placeholder="Cari Nama Produk " name="cari_produk" aria-label="Search">
             <button class="btn btn-primary" name="images" type="submit">Search</button>
           </form>
         </div>
@@ -372,7 +372,10 @@
         <div class="row " style="margin-top:100px !important ;">
           <div  id="_bg__frame_1">
             <div class="mb-5"> <button class="download" type="submit">Dowload</button><br>
-              <button class="download" type="submit">Deteksi Repost</button><br>
+            <form action="/predict" method="POST">
+              <button class="download" name="images" type="submit">Deteksi Repost</button>
+              </form>
+              <br>
               <img src="{{url_for('static', filename='Dataset/Data1.png')}}" id="mask_group" />
               <img src="{{url_for('static', filename='Dataset/Data1.png')}}" id="mask_group" />
               <img src="{{url_for('static', filename='Dataset/Data1.png')}}" id="mask_group" />

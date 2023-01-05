@@ -6,6 +6,12 @@ from datetime import datetime
 from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
 import os
+import h5py
+from scrab import ambil_foto
+from keras.models import load_model
+import wget
+# from Scraping_selenium import scrappip
+
 app = Flask(__name__)
 #koneksi
 app.secret_key = 'bebasapasaja'
@@ -109,7 +115,7 @@ def login():
     return render_template('login.html')
 
 
-
+#index
 
 #logout
 @app.route('/logout')
@@ -119,6 +125,21 @@ def logout():
     session.pop('level', None)
     
     return redirect(url_for('login'))
+
+@app.route('/predict', methods=['POST'])
+def predict():
+  # import model
+#   model = load_model('model.hdf5')
+    cari_produk = request.form['cari_produk']
+    ambil_foto(cari_produk)
+    return redirect(url_for("index"))
+  # get user input
+#   input_data = request.form.get('images')
+
+  # use model to make prediction
+#   prediction = model.predict(input_data)
+
+#   return render_template('index.html', prediction=prediction)
 
 
 
